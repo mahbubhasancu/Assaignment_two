@@ -9,7 +9,20 @@
 body{
   background-color: #F5F8FF;
 }
-.custom-container{
+.custom-width{
   max-width: 1140px;
   margin: 0px auto;
 }
+
+/* banner css start */
+.banner{
+  margin-top: 20px;
+}
+.banner-text{
+  margin-top: 299px;
+  padding: 20px;
+}
+.banner-text h1{
+  margin-bottom: 20px;
+}
+/* baneer css end */
