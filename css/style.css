@@ -3,8 +3,8 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  /* font-family: "Noto Serif", serif;
-  font-family: "Inter", sans-serif; */
+  font-family: "Noto Serif", serif;
+  /* font-family: "Inter", sans-serif; */
 }
 body{
   background-color: #F5F8FF;
@@ -29,7 +29,7 @@ body{
 
 .plant-section{
   margin-top: 70px;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 .card-container{
   margin-top: 60px;
@@ -39,10 +39,30 @@ body{
 }
 .card-btn{
   padding: 8px 20px;
-  width: 270px;
+  min-width: 270px;
 }
 .card-text p{
-  width: 270px;
+  min-width: 270px;
   text-align: center;
 }
 /* plant-card section end */
+
+.trust{
+  height: 286px;
+  width: 286px;
+  position: absolute;
+  margin: -160px 0px 0px 380px;
+  z-index: 3;
+}
+.plant-lover{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  position: relative;
+}
+.right-text{
+  margin-top: 50px;
+}
+.right-text-title{
+  margin-bottom: 100px;
+}
