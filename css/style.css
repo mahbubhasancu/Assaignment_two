@@ -26,3 +26,23 @@ body{
   margin-bottom: 20px;
 }
 /* baneer css end */
+
+.plant-section{
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+.card-container{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card-btn{
+  padding: 8px 20px;
+  width: 270px;
+}
+.card-text p{
+  width: 270px;
+  text-align: center;
+}
+/* plant-card section end */
