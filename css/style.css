@@ -3,5 +3,13 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Noto Serif", serif;
+  font-family: "Inter", sans-serif; */
+}
+body{
+  background-color: #F5F8FF;
+}
+.custom-container{
+  max-width: 1140px;
+  margin: 0px auto;
 }
