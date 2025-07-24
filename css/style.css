@@ -1,170 +1,178 @@
 /* common css */
-* {
+*{
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   /* font-family: "Inter", sans-serif; */
 }
-body {
-  background-color: #f5f8ff;
+body{
+  background-color: #F5F8FF;
   font-family: "Noto Serif", serif;
 }
-.font-inter {
+.font-inter{
   font-family: "Inter", sans-serif;
 }
-.font-noto-serif {
+.font-noto-serif{
   font-family: "Noto Serif", serif;
 }
-.custom-width {
+.custom-width{
   max-width: 1140px;
   margin: 0px auto;
 }
 
 /* banner css start */
-.banner {
+.banner{
   margin-top: 20px;
 }
-.banner-text {
+.banner-text{
   margin-top: 299px;
   padding: 20px;
 }
-.banner-text h1 {
+.banner-text h1{
   margin-bottom: 20px;
 }
 /* baneer css end */
 
-.plant-section {
+.plant-section{
   margin-top: 70px;
   margin-bottom: 200px;
 }
-.card-container {
+.card-container{
   margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.card-btn {
+.card-btn{
   padding: 8px 20px;
   min-width: 270px;
 }
-.card-text p {
+.card-text p{
   min-width: 270px;
   text-align: center;
 }
 /* plant-card section end */
 
-.trust {
+.trust{
   height: 286px;
   width: 286px;
   position: absolute;
   margin: -160px 0px 0px 380px;
   z-index: 3;
 }
-.plant-lover {
+.trust-shadow{
+  filter: drop-shadow(10px 5px 3px #01010e);
+  background: transparent;
+}
+.plant-lover{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 80px;
   position: relative;
 }
-.right-text {
+.right-text{
   margin-top: 50px;
 }
-.right-text-title {
+.right-text-title{
   margin-bottom: 100px;
 }
 /* plant lover end */
-.deal {
+.deal{
   margin: 100px auto;
 }
-.deal-image {
+.deal-image{
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
-.left {
+.left{
   display: flex;
   flex-direction: column;
   gap: 15px;
+  justify-content: space-between;
 }
-.left-one {
-  background-image: url(../images/deal-bloom.png);
-  height: 201px;
-  width: 367px;
-  border-radius: 10px;
+.left-one{
+ background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(2, 2, 2, 0.5)), linear-gradient(to left, rgba(0,0,0,0), rgba(2, 2, 2, 0.5)), url(../images/deal-bloom.png);
+ height: 201px;
+ width: 367px;
+ border-radius: 10px;
+ background-position: no-repeat;
 }
-.left-text {
+.left-text{
   margin-top: 70px;
 }
-.left-two {
-  background-image: url(../images/deal-ana.png);
+.left-two{
+  background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(2, 2, 2, 0.5)), linear-gradient(to left, rgba(0,0,0,0), rgba(2, 2, 2, 0.5)), url(../images/deal-ana.png);
   height: 201px;
   width: 367px;
   border-radius: 10px;
   background-repeat: no-repeat;
 }
-.right {
-  background-image: url(../images/deal-zabo.png);
+.right{
+  background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(2, 2, 2, 0.5)), linear-gradient(to left, rgba(0,0,0,0), rgba(2, 2, 2, 0.5)), url(../images/deal-zabo.png);
   height: 424px;
   width: 753px;
   border-radius: 10px;
-  filter: brightness(50%);
-  position: relative;
-}
-.right-inside {
-  position: absolute;
-  margin: 161px 0px 0px 564px;
 }
 
 /* deal css end */
 
-.joint-section {
+.joint-section{
   background-image: url(../images/news-letter-bg.png);
   width: 100%;
   height: 533px;
   margin-top: 150px;
   margin-bottom: 50px;
+  
 }
-.joint-text {
+.joint-text{
   color: white;
-  margin: 240px 0px 0px 330px;
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
 }
-.joint-text h1 {
+.JOIN-TEXT-CENTER{
+  flex: 100%;
+  margin-top: 200px;
+}
+.joint-text h1{
   margin-bottom: 20px;
 }
-input[type="text"] {
+input[type=text]{
   padding: 8px 280px 8px 0px;
 }
-.join-btn {
+.join-btn{
   margin-left: -4px;
 }
 
 /* joint css end */
 
-.footer-section {
+.footer-section{
   display: grid;
   grid-template-columns: 33% 17% 17% 33%;
   grid-column-gap: 10px;
   justify-content: space-around;
+
 }
-.footer-logo img {
+.footer-logo img{
   margin-bottom: 20px;
 }
-.footer-logo p {
-  color: #8987a1;
+.footer-logo p{
+  color: #8987A1;
 }
-.footer-social {
+.footer-social{
   display: flex;
   justify-content: space-around;
 }
 
-.footer-social img {
+.footer-social img{
   height: 36px;
   width: 36px;
 }
-.margin-b {
+.margin-b{
   margin-bottom: 20px;
 }
 
 /* footer css end */
+
+425px
