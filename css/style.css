@@ -23,13 +23,18 @@ body{
 /* banner css start */
 .banner{
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .banner-text{
-  margin-top: 299px;
-  padding: 20px;
+  flex: 50%;
 }
 .banner-text h1{
   margin-bottom: 20px;
+}
+.banner-image{
+  flex: 50%;
 }
 /* baneer css end */
 
@@ -40,7 +45,7 @@ body{
 .card-container{
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 .card-btn{
@@ -175,4 +180,46 @@ input[type=text]{
 
 /* footer css end */
 
-425px
+@media only screen and (max-width: 425px) {
+.responsive-nav{
+  display: none;
+}
+.responsive-cart{
+  font-weight: normal;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.responsive-logo{
+  margin-left: 20px;
+}
+/* nav section end */
+.banner{
+  flex-direction: column-reverse;
+}
+.banner-image{
+ margin-bottom: 30px;
+}
+.banner-text h1 {
+  font-size: 24px;
+  line-height: 24px;
+}
+.banner-text p{
+  font-size: 14px;
+}
+/* banner css end */
+.our-plant h1{
+  font-size: 24px;
+}
+.our-plant p{
+  font-size: 14px;
+}
+.card-container{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+
+
+}
