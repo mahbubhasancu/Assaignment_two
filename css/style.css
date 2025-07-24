@@ -66,3 +66,67 @@ body{
 .right-text-title{
   margin-bottom: 100px;
 }
+/* plant lover end */
+.deal{
+  margin: 100px auto;
+}
+.deal-image{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.left-one{
+ background-image: url(../images/deal-bloom.png);
+ height: 201px;
+ width: 367px;
+ border-radius: 10px;
+}
+.left-text{
+  margin-top: 70px;
+}
+.left-two{
+  background-image: url(../images/deal-ana.png);
+  height: 201px;
+  width: 367px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+.right{
+  background-image: url(../images/deal-zabo.png);
+  height: 424px;
+  width: 753px;
+  border-radius: 10px;
+  filter: brightness(50%);
+  position: relative;
+}
+.right-inside{
+  position: absolute;
+  margin: 160px 0px 0px 556px
+}
+
+/* deal css end */
+
+.joint-section{
+  background-image: url(../images/news-letter-bg.png);
+  width: 100%;
+  height: 533px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  
+}
+.joint-text{
+  color: white;
+  margin: 230px 0px 0px 350px;
+  position: absolute;
+  text-align: center;
+}
+input[type=text]{
+  padding: 8px 280px 8px 0px;
+}
+
+/* joint css end */
