@@ -128,5 +128,23 @@ body{
 input[type=text]{
   padding: 8px 280px 8px 0px;
 }
+.join-btn{
+  margin-left: -3px;
+}
 
 /* joint css end */
+
+.footer-section{
+  display: grid;
+  grid-template-columns: 33% 17% 17% 33%;
+  grid-column-gap: 10px;
+
+}
+.footer-social{
+  display: flex;
+  justify-content: space-around;
+}
+.footer-social img{
+  height: 36px;
+  width: 36px;
+}
