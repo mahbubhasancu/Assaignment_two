@@ -1,5 +1,5 @@
 /* common css */
-* {
+*{
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
@@ -116,12 +116,12 @@ body{
   width: 100%;
   height: 533px;
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   
 }
 .joint-text{
   color: white;
-  margin: 230px 0px 0px 350px;
+  margin: 240px 0px 0px 330px;
   position: absolute;
   text-align: center;
 }
@@ -129,7 +129,7 @@ input[type=text]{
   padding: 8px 280px 8px 0px;
 }
 .join-btn{
-  margin-left: -3px;
+  margin-left: -4px;
 }
 
 /* joint css end */
@@ -138,13 +138,26 @@ input[type=text]{
   display: grid;
   grid-template-columns: 33% 17% 17% 33%;
   grid-column-gap: 10px;
+  justify-content: space-around;
 
+}
+.footer-logo img{
+  margin-bottom: 20px;
+}
+.footer-logo p{
+  color: #8987A1;
 }
 .footer-social{
   display: flex;
   justify-content: space-around;
 }
+
 .footer-social img{
   height: 36px;
   width: 36px;
 }
+.margin-b{
+  margin-bottom: 20px;
+}
+
+/* footer css end */
