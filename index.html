@@ -29,6 +29,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Custom Css -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /*SPINNING ANIMATION */
+      @keyframes spin {
+        from { transform: rotate(0deg) }
+        to { transform: rotate(360deg) }
+      }
+      .spin { animation: spin 5s linear infinite; }
+      </style>
     <title>Assignment Two</title>
   </head>
   <body>
@@ -90,11 +98,7 @@
                 Lily Blossom <br /><b>20 USD</b>
               </p>
             </div>
-            <button
-              class="card-btn bg-[#E95A08] text-[22px] text-white font-inter"
-            >
-              ADD TO CART
-            </button>
+            <button class="card-btn bg-[#E95A08] text-[22px] text-white font-inter" onclick="showAlert()">ADD TO CART</button>
           </div>
           <div class="card">
             <img src="images/sample-flower-image.png" alt="" />
@@ -103,11 +107,7 @@
                 Lily Blossom <br /><b>20 USD</b>
               </p>
             </div>
-            <button
-              class="card-btn bg-[#E95A08] text-[22px] text-white font-inter"
-            >
-              ADD TO CART
-            </button>
+            <button class="card-btn bg-[#E95A08] text-[22px] text-white font-inter" onclick="showAlert()">ADD TO CART</button>
           </div>
           <div class="card">
             <img src="images/sample-flower-image.png" alt="" />
@@ -116,11 +116,7 @@
                 Lily Blossom <br /><b>20 USD</b>
               </p>
             </div>
-            <button
-              class="card-btn bg-[#E95A08] text-[22px] text-white font-inter"
-            >
-              ADD TO CART
-            </button>
+            <button class="card-btn bg-[#E95A08] text-[22px] text-white font-inter" onclick="showAlert()">ADD TO CART</button>
           </div>
           <div class="card">
             <img src="images/sample-flower-image.png" alt="" />
@@ -129,11 +125,7 @@
                 Lily Blossom <br /><b>20 USD</b>
               </p>
             </div>
-            <button
-              class="card-btn bg-[#E95A08] text-[22px] text-white font-inter"
-            >
-              ADD TO CART
-            </button>
+            <button class="card-btn bg-[#E95A08] text-[22px] text-white font-inter" onclick="showAlert()">ADD TO CART</button>
           </div>
           <div class="card">
             <img src="images/sample-flower-image.png" alt="" />
@@ -142,11 +134,7 @@
                 Lily Blossom <br /><b>20 USD</b>
               </p>
             </div>
-            <button
-              class="card-btn bg-[#E95A08] text-[22px] text-white font-inter"
-            >
-              ADD TO CART
-            </button>
+            <button class="card-btn bg-[#E95A08] text-[22px] text-white font-inter" onclick="showAlert()">ADD TO CART</button>
           </div>
           <div class="card">
             <img src="images/sample-flower-image.png" alt="" />
@@ -155,11 +143,7 @@
                 Lily Blossom <br /><b>20 USD</b>
               </p>
             </div>
-            <button
-              class="card-btn bg-[#E95A08] text-[22px] text-white font-inter"
-            >
-              ADD TO CART
-            </button>
+            <button class="card-btn bg-[#E95A08] text-[22px] text-white font-inter" onclick="showAlert()">ADD TO CART</button>
           </div>
           <div class="card">
             <img src="images/sample-flower-image.png" alt="" />
@@ -168,11 +152,7 @@
                 Lily Blossom <br /><b>20 USD</b>
               </p>
             </div>
-            <button
-              class="card-btn bg-[#E95A08] text-[22px] text-white font-inter"
-            >
-              ADD TO CART
-            </button>
+            <button class="card-btn bg-[#E95A08] text-[22px] text-white font-inter" onclick="showAlert()">ADD TO CART</button>
           </div>
           <div class="card">
             <img src="images/sample-flower-image.png" alt="" />
@@ -181,17 +161,13 @@
                 Lily Blossom <br /><b>20 USD</b>
               </p>
             </div>
-            <button
-              class="card-btn bg-[#E95A08] text-[22px] text-white font-inter"
-            >
-              ADD TO CART
-            </button>
+            <button class="card-btn bg-[#E95A08] text-[22px] text-white font-inter" onclick="showAlert()">ADD TO CART</button>
           </div>
         </div>
       </section>
       <!-- plant section end -->
       <section class="container custom-width">
-        <img class="trust trust-shadow" src="images/trusted-badge.png" alt="" />
+        <img class="trust trust-shadow spin" src="images/trusted-badge.png" alt="" />
         <div class="plant-lover">
           <div class="plant-lover-left">
             <img src="images/flower-store.png" alt="" />
@@ -336,5 +312,10 @@
       </div>
     </footer>
     <!-- footer section end -->
+    <script>
+      function showAlert() {
+        alert("Flower Added to Cart");
+      }
+    </script>
   </body>
 </html>

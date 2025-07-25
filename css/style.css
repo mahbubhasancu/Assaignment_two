@@ -337,20 +337,4 @@ input[type=text]
   margin-bottom: 20px;
 }
 /* fotter css end */
-
-    /* (A) SPINNING ANIMATION */
-    @keyframes spin {
-      from { transform: rotate(0deg) }
-      to { transform: rotate(360deg) }
-    }
-    .spin { animation: spin 3s linear infinite; }
-
-    /* (B) 3D SPINNING ANIMATION */
-    @keyframes spin3D {
-      from { transform: rotateY(0deg) }
-      to { transform: rotateY(360deg) }
-    }
-    .spin3D { animation: spin3D 3s ease-in-out infinite; }
-
-    /* (C) SPIN ON HOVER */
-    .trust:hover { animation: spin3D 1s ease 1; }
+}
