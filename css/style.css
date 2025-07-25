@@ -294,7 +294,7 @@ input[type=text]{
 }
 /* deal dsection end */
 .joint-section {
-  background-size: contain;
+  background-size: cover;
   background-position: no-repeat;
   width: 100%;
   height: 201px;
@@ -337,156 +337,20 @@ input[type=text]
   margin-bottom: 20px;
 }
 /* fotter css end */
-}
 
-/************************************************************************************
- Responsive css for device max width 600px *=========================================
-*************************************************************************************/        
-@media only screen and (max-width: 600px) {
-  .responsive-nav{
-    display: none;
-  }
-  .responsive-cart{
-    font-weight: normal;
-    margin-right: 20px;
-    font-size: 20px;
-  }
-  .responsive-logo{
-    margin-left: 20px;
-  }
-  /* nav section end */
-  .banner{
-    flex-direction: column-reverse;
-  }
-  .banner-image{
-   margin-bottom: 30px;
-  }
-  .banner-text h1 {
-    font-size: 24px;
-    line-height: 24px;
-    padding: 15px;
-  }
-  .banner-text p{
-    font-size: 14px;
-    padding: 15px;
-  }
-  /* banner css end */
-  .our-plant h1{
-    font-size: 24px;
-  }
-  .our-plant p{
-    font-size: 14px;
-  }
-  .card-container{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .card{
-    padding: 10px;
-  }
-  .card-text p{
-    font-size: 14px;
-  }
-  .card-btn{
-    font-size: 14px;
-  }
-  /* our plant css end */
-  .plant-lover{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    margin-top: -170px;
-  }
-  .trust{
-    display: none;
-  }
-  .plant-lover-left img{
-    padding: 15px;
-  }
-  .right-text-title {
-    margin-bottom: 10px;
-    margin-top: -50px;
-    font-size: 24px;
-    padding: 15px;
-  }
-  .plant-lover-right-list{
-    font-size: 14px;
-    padding: 30px;
-  }
-  /* plant lover end css */
-  .deal {
-    margin: 20px auto;
-    padding: 15px;
-  }
-  .deal h1{
-    font-size: 24px;
-  }
-  .deal p{
-    font-size: 14px;
-  }
-  .deal-image{
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 20px;
-  }
-  .left-one {
-    margin-left: 60px;
-  }
-  .left-two {
-    margin-left: 60px;
-  }
-  .right{
-    height: 201px;
-    width: 367px;
-    margin-left: 60px;
-  }
-  .right h2{
-    font-size: 18px;
-  }
-  .right p{
-    font-size: 14px
-  }
-  /* deal section end */
-  .joint-section {
-    background-size: contain;
-    background-position: no-repeat;
-    width: 100%;
-    height: 201px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .JOIN-TEXT-CENTER h1{
-    font-size: 24px;
-    margin-top: -140px;
-  }
-  input[type=text]
-   {
-      padding: 8px 15px 8px 0px;
-      font-size: 14px;
-  }
-  .join-btn {
-    margin: 0px 0px 0px -4px;
-    padding: 8px 20px 8px 20px;
-    font-size: 14px;
-  }
-  /* joint section css end */
-  
-  .footer-section{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-column-gap: 100px;
-   font-size: 14px;
-  }
-  .footer-logo{
-    margin: 15px;
-  }
-  .footer-menu{
-    margin-left: 15px;
-  }
-  .footer-link{
-    margin-left: 15px;
-  }
-  .footer-social a{
-    margin-left: 15px;
-    margin-bottom: 20px;
-  }
-}
+    /* (A) SPINNING ANIMATION */
+    @keyframes spin {
+      from { transform: rotate(0deg) }
+      to { transform: rotate(360deg) }
+    }
+    .spin { animation: spin 3s linear infinite; }
+
+    /* (B) 3D SPINNING ANIMATION */
+    @keyframes spin3D {
+      from { transform: rotateY(0deg) }
+      to { transform: rotateY(360deg) }
+    }
+    .spin3D { animation: spin3D 3s ease-in-out infinite; }
+
+    /* (C) SPIN ON HOVER */
+    .trust:hover { animation: spin3D 1s ease 1; }
